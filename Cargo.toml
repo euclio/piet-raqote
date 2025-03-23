@@ -1,0 +1,22 @@
+[package]
+name = "piet-raqote"
+version = "0.1.0"
+authors = ["Andy Russell <arussell123@gmail.com>"]
+description = "Raqote backend for piet 2D graphics abstraction."
+repository = "https://github.com/euclio/piet-raqote"
+keywords = ["graphics", "2d"]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+piet = "0.6.2"
+piet-cosmic-text = "0.3.4"
+raqote = { version = "0.8.5", default-features = false }
+tinyvec = "1.9.0"
+
+[dev-dependencies]
+piet = { version = "0.6.2", features = ["samples"] }
+raqote = { version = "0.8.5", default-features = false, features = ["png"] }
+
+[workspace.metadata.release]
+sign-commit = true
